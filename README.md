@@ -26,7 +26,7 @@ This package is based on:
 Install the package via composer:
 
 ```bash
-composer require mvenghaus/filament-plugin-translatable-inline:"^3.0"
+composer require mvenghaus/filament-plugin-translatable-inline:"^3.1"
 ```
 
 ### Configuration

@@ -2,7 +2,7 @@
 
 All notable changes to `mvenghaus/filament-plugin-translatable-inline` will be documented in this file.
 
-## 3.1.0 - 2025-01-XX
+## 3.1.0 - 2025-01-24
 
 ### Breaking Changes
 - **BREAKING**: Removed dependency on `filament/spatie-laravel-translatable-plugin` due to Filament v3 compatibility issues

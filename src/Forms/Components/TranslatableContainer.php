@@ -96,13 +96,18 @@ class TranslatableContainer extends Component
 
     protected function getDefaultLocales(): array
     {
-        // Try to get locales from spatie/laravel-translatable config
+        // Priority 1: Try to get locales from spatie/laravel-translatable config
         if (config('translatable.locales')) {
             return config('translatable.locales');
         }
 
-        // Fallback to app locales or default
-        return config('app.locales', [config('app.locale', 'en')]);
+        // Priority 2: Try to get locales from app config
+        if (config('app.locales')) {
+            return config('app.locales');
+        }
+
+        // Priority 3: Fallback to app locale
+        return [config('app.locale', 'en')];
     }
 
     public function isLocaleStateEmpty(string $locale): bool
