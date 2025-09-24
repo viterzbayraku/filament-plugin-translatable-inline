@@ -24,7 +24,7 @@
   ],
   "require": {
     "php": "^8.2",
-    "filament/forms": "^3.0",
+    "filament/forms": "^3.0|^4.0",
     "filament/spatie-laravel-translatable-plugin": "^3.0"
   },
   "autoload": {

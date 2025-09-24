@@ -30,11 +30,11 @@
              @click="handleOpenState()"
         >
             <div x-show="!open">
-                <x-filament::icon icon="heroicon-c-chevron-right" class="h-5 w-5 text-gray-500 dark:text-gray-400"/>
+                <x-filament::icon icon="heroicon-m-chevron-right" class="h-5 w-5 text-gray-500 dark:text-gray-400"/>
             </div>
 
             <div x-show="open">
-                <x-filament::icon icon="heroicon-c-chevron-down" class="h-5 w-5 text-gray-500 dark:text-gray-400"/>
+                <x-filament::icon icon="heroicon-m-chevron-down" class="h-5 w-5 text-gray-500 dark:text-gray-400"/>
             </div>
 
             @foreach($getTranslatableLocales() as $locale)
