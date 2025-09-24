@@ -2,6 +2,27 @@
 
 All notable changes to `mvenghaus/filament-plugin-translatable-inline` will be documented in this file.
 
+## 3.1.0 - 2025-01-24
+
+### Breaking Changes
+- **BREAKING**: Removed dependency on `filament/spatie-laravel-translatable-plugin` due to Filament v3 compatibility issues
+- **BREAKING**: Now requires direct configuration of translatable locales via Laravel configuration
+
+### Added
+- Direct support for `spatie/laravel-translatable` without Filament plugin dependency
+- Automatic locale detection from multiple configuration sources
+- Better fallback handling for locale configuration
+- Documentation for Filament v4 migration path
+
+### Changed
+- Locale detection now uses Laravel configuration instead of Filament plugin
+- Updated documentation with new configuration instructions
+- Added upgrade guide for existing users
+
+### Fixed
+- Compatibility issues with Filament v3 installations
+- Missing translatable plugin dependency errors
+
 ## 3.0.8 - 2024-03-16
 - added support for table repeater
 
