@@ -14,7 +14,7 @@ This approach offers several advantages:
 
 ## Requirements
 
-You need the latest version of Filament v4.
+You need Filament v3 or v4.
 
 This package is based on:
 - [Spatie Laravel Translatable](https://github.com/spatie/laravel-translatable)
@@ -22,10 +22,18 @@ This package is based on:
 
 You don't need to install them separately, it's handled via dependencies. 
 
+> **Note:** This plugin is compatible with both Filament v3 and v4. It uses the Filament Spatie Translatable Plugin v3 for both versions until v4 becomes available.
+
 ## Installation
 
 Install the package via composer:
 
+**For Filament v3:**
+```bash
+composer require mvenghaus/filament-plugin-translatable-inline:"^3.0"
+```
+
+**For Filament v4:**
 ```bash
 composer require mvenghaus/filament-plugin-translatable-inline:"^4.0"
 ```

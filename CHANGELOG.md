@@ -3,10 +3,12 @@
 All notable changes to `mvenghaus/filament-plugin-translatable-inline` will be documented in this file.
 
 ## 4.0.0 - 2024-09-24
-- Added support for Filament v4
-- Updated dependencies to Filament v4
-- Updated heroicon icon naming convention for v4 compatibility
-- Updated README to reflect v4 requirements
+- Added support for Filament v4 alongside v3 compatibility
+- Updated dependencies to support both Filament v3 and v4 (`^3.0|^4.0`)
+- Updated heroicon icon naming convention for better v4 compatibility (using heroicon-m-)
+- Updated README to reflect dual version support and installation instructions
+- Note: This version works with both Filament v3 and v4, using v3 of the Spatie Translatable Plugin
+- Fixed icon compatibility issues between Filament v3 and v4
 
 ## 3.0.8 - 2024-03-16
 - added support for table repeater
