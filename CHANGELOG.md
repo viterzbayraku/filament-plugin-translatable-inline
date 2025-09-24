@@ -2,6 +2,12 @@
 
 All notable changes to `mvenghaus/filament-plugin-translatable-inline` will be documented in this file.
 
+## 4.0.0 - 2024-09-24
+- Added support for Filament v4
+- Updated dependencies to Filament v4
+- Updated heroicon icon naming convention for v4 compatibility
+- Updated README to reflect v4 requirements
+
 ## 3.0.8 - 2024-03-16
 - added support for table repeater
 
