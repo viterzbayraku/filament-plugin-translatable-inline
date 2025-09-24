@@ -91,7 +91,18 @@ class TranslatableContainer extends Component
             $resourceLocales = $this->getLivewire()::getResource()::getTranslatableLocales();
         }
 
-        return collect($resourceLocales ?? filament('spatie-laravel-translatable')->getDefaultLocales());
+        return collect($resourceLocales ?? $this->getDefaultLocales());
+    }
+
+    protected function getDefaultLocales(): array
+    {
+        // Try to get locales from spatie/laravel-translatable config
+        if (config('translatable.locales')) {
+            return config('translatable.locales');
+        }
+
+        // Fallback to app locales or default
+        return config('app.locales', [config('app.locale', 'en')]);
     }
 
     public function isLocaleStateEmpty(string $locale): bool

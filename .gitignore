@@ -1,1 +1,6 @@
 .idea
+vendor/
+composer.lock
+*.tmp
+*.temp
+*.zip~
